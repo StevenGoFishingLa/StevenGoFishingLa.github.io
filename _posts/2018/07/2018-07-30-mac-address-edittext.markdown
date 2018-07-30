@@ -232,6 +232,8 @@ if(macAdd==null){
 }
 ```
 
+[完整範例專案](https://github.com/StevenGoFishingLa/MacEditText)
+
 參考至:
 
 [MAC地址合法性检测
