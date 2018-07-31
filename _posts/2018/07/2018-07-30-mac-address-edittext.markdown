@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mac Address EditText"
-date:   2015-07-09 00:06:05
+date:   2017-07-30 19:06:05
 categories: Android
 tags: mac address EditText
 ---
@@ -68,9 +68,11 @@ public class MacEditText extends LinearLayout {
     }
 
     InputFilter filter = new InputFilter() {
-        public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
+        public CharSequence filter(CharSequence source, int start, int end,
+                                    Spanned dest, int dstart, int dend) {
             for (int i = start; i < end; i++) {
-                if (!Character.isLetterOrDigit(source.charAt(i))) {//allow only numbers and alphabets
+                if (!Character.isLetterOrDigit(source.charAt(i))) {
+                  //allow only numbers and alphabets
                     return "";
                 }
             }
@@ -94,7 +96,8 @@ public class MacEditText extends LinearLayout {
 
         for (int i = 0; i < OCTET_NUM; i++) {
             macOctet[i].setGravity(Gravity.CENTER);
-            macOctet[i].setFilters(new InputFilter[]{new InputFilter.LengthFilter(2), filter});//input max length = 2, allow only numbers and alphabets
+            macOctet[i].setFilters(new InputFilter[]{new InputFilter.LengthFilter(2), filter});
+            //input max length = 2, allow only numbers and alphabets
             LayoutParams params = (LayoutParams) macOctet[i].getLayoutParams();
             macOctet[i].setSingleLine(true);
             macOctet[i].setImeOptions(EditorInfo.IME_ACTION_NEXT);//set keyboard nex button
@@ -233,6 +236,11 @@ if(macAdd==null){
 ```
 
 [完整範例專案](https://github.com/StevenGoFishingLa/MacEditText)
+
+後來想到好像可以自行設定鍵盤內容，mac address只允許0~9 a-F
+
+之後覺得有必要再來改囉!
+
 
 參考至:
 

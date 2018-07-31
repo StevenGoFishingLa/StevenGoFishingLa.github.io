@@ -13,7 +13,7 @@
      * 内容JSON
      */
   var demoContent = [
-    {
+    {/*
       demo_link: 'https://codepen.io/haoyang/pen/jrvrQq',
       img_link: 'https://ooo.0o0.ooo/2016/11/24/5836d81f48cd2.png',
       code_link: 'https://codepen.io/haoyang/pen/jrvrQq',
@@ -27,7 +27,7 @@
       title: 'Header Transition 渐变动画',
       core_tech: 'jQuery BootStrap CSS3',
       description: '花费不到半小时帮师兄做了一个简单的 CSS3 动画效果，当页面滚动到指定距离时，header 区的背景色由透明变为蓝色。仿照了网站 <a href ="https://quorrajs.org/">https://quorrajs.org/</a> 的 Header 区动画效果。'
-    }
+    }*/
   ];
 
   contentInit(demoContent) //内容初始化
