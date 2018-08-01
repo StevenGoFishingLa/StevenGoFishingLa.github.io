@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Mac Address EditText"
-date:   2017-07-30 19:06:05
-categories: Android
-tags: mac address EditText
+layout: "post"
+title: "Mac Address EditText"
+date: "2018-07-30 19:00"
+categories: "Android"
+tags: "mac address EditText"
 ---
 * content
 {:toc}
@@ -240,6 +240,15 @@ if(macAdd==null){
 後來想到好像可以自行設定鍵盤內容，mac address只允許0~9 a-F
 
 之後覺得有必要再來改囉!
+
+## 小更新
+更改輸入type
+```java
+macOctet[i].setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+```
+可以讓鍵盤只顯示英文，並且將數字排在英文上方，使用者就不必去切換鍵盤囉
+
+![input-keyboard](/images/2018/07/mac-address-edittext/input-keyboard.PNG)
 
 
 參考至:
