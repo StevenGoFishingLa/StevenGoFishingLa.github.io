@@ -248,6 +248,7 @@ macOctet[i].setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
 ```
 可以讓鍵盤只顯示英文，並且將數字排在英文上方，使用者就不必去切換鍵盤囉
 
+
 ![input-keyboard](/images/2018/07/mac-address-edittext/input-keyboard.png)
 
 
