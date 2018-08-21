@@ -5,6 +5,9 @@ date: "2018-08-01 13:55"
 categories: "Java"
 tags: "java sring split dot regex"
 ---
+* content
+{:toc}
+
 ## 問題
 摁剛剛在切割字串時發現
 怎麼沒作用啦?
